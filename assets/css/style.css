@@ -26,8 +26,9 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+
 .hidden-header {
-    display:none;
+    display: none;
 
 }
 
@@ -150,23 +151,32 @@ main {
 }
 
 #circle-cover-bg {
-background: url('../images/reasons-image.webp') no-repeat top center / cover;
-width:90vw;
-height:90vw;
-margin-bottom :20px;
-/* Makes the square image into a circle */
-border-radius:50%;
-max-width:300px;
-max-height:300px;
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
 
 }
+
 #benefits-images {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height:1em;
+}
+#photos {
+    line-height: 0;
+}
 
 /* Footer */
 #social-networks {
@@ -182,30 +192,34 @@ max-height:300px;
     padding: 5%;
     color: #3a3a3a;
 }
+
 /*Meetup section styling*/
 #times {
-    background: url('../images/dublin-city.webp') no-repeat center/cover ;
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
     /*handel responsivity without the need to media query*/
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 #times div {
-    color: #fafafa; 
-    background-color: rgba( 0, 0, 0, .7);
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .7);
     text-align: center;
-    padding :15px;
+    padding: 15px;
     /* this will not wrap on screens less then 400px wide.
     each div will expan to fill the available space on its row*/
     flex-basis: 200px;
-    flex-grow:1;
+    flex-grow: 1;
     /*creat a grid or meetup times dives over background images*/
-    border: 2px solid white; 
+    border: 2px solid white;
 }
+
 /*override the h3 color in the heading */
 #times h3 {
-color:#fafafa;
+    color: #fafafa;
 
 }
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -248,18 +262,21 @@ color:#fafafa;
         right: 50px;
     }
 }
+
 /* reason section*/
 #benefits-physical,
 #benefits-mental {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
 }
-#benefits-physical > div,
-#benefits-mental > div {
-    width:75%;
+
+#benefits-physical>div,
+#benefits-mental>div {
+    width: 75%;
 }
-#benefits-mental > div {
+
+#benefits-mental>div {
     text-align: end;
     align-self: flex-end;
 }
@@ -274,25 +291,29 @@ color:#fafafa;
 /* Large devices (laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
     #benefits {
-            display: flex;
-            flex-direction: row; 
-        }
-    #benefits > div {
-        flex:1;
-    }
-    #benefits-image {
-        order:0;
-    }
-    #benefits-mental {
-        order:1;
+        display: flex;
+        flex-direction: row;
     }
 
-     #benefits-mental > div {
+    #benefits>div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental>div {
         align-self: flex-start;
-     }
-     #benefits-physical > div {
+    }
+
+    #benefits-physical>div {
         align-self: flex-end;
-     }
-       
-       
+    }
+
+
 }
