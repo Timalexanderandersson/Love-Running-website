@@ -26,6 +26,10 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+.hidden-header {
+    display:none;
+
+}
 
 /* Header */
 header {
