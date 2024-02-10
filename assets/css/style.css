@@ -178,7 +178,30 @@ max-height:300px;
     padding: 5%;
     color: #3a3a3a;
 }
+/*Meetup section styling*/
+#times {
+    background: url('../images/dublin-city.webp') no-repeat center/cover ;
+    /*handel responsivity without the need to media query*/
+    display:flex;
+    flex-wrap:wrap;
+}
+#times div {
+    color: #fafafa; 
+    background-color: rgba( 0, 0, 0, .7);
+    text-align: center;
+    padding :15px;
+    /* this will not wrap on screens less then 400px wide.
+    each div will expan to fill the available space on its row*/
+    flex-basis: 200px;
+    flex-grow:1;
+    /*creat a grid or meetup times dives over background images*/
+    border: 2px solid white; 
+}
+/*override the h3 color in the heading */
+#times h3 {
+color:#fafafa;
 
+}
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
